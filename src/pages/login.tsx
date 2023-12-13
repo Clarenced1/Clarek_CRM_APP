@@ -6,11 +6,12 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { ThemedTitleV2 } from "@refinedev/mui";
 
+import { yariga } from "../assets";
 import { CredentialResponse } from "../interfaces/google";
 
 // Todo: Update your Google Client ID here
 const GOOGLE_CLIENT_ID =
-  "1041339102270-e1fpe2b6v6u1didfndh7jkjmpcashs4f.apps.googleusercontent.com";
+  "570052082980-krosq7avtroq5v485e2gmdeg8h3164p2.apps.googleusercontent.com";
 
 export const Login: React.FC = () => {
   const { mutate: login } = useLogin<CredentialResponse>();
@@ -75,8 +76,8 @@ export const Login: React.FC = () => {
           Powered by
           <img
             style={{ padding: "0 5px" }}
-            alt="Google"
-            src="https://refine.ams3.cdn.digitaloceanspaces.com/superplate-auth-icons%2Fgoogle.svg"
+            alt="Yariga Logo"
+            src="yariga"
           />
           Google
         </Typography>
